@@ -1,0 +1,79 @@
+25-Okt-2019
+
+# async && await
+ -async mengubah function menjadi asynchronous
+ -await menunda eksekusi hingga proses asynchronous selesai. Await bisa digunakan berkali-kali.
+=================================================================================================
+# promise
+ -promise adalah object
+ -mengembalikan object
+=================================================================================================
+# javascript 
+    Back End (Node JS)
+        - Express
+        - HappiJS
+        - NestJS
+
+    Front End
+        - Angular
+        - React JS
+        - Vue JS
+
+    Mobile
+        - React Native
+=================================================================================================
+# javascript DOM
+ - setiap element2 itu mempunyai event seperti input event, button event etc.
+=================================================================================================
+# Single page && Multi page
+ - Single page, Setiap kali request maka akan pindah halaman, setiap ada perubahan, yang berubah hanya dibrowser saja.
+ - Multi page / Traditional Page, Setiap butuh halaman harus request dulu dan semua proses rendernya ada di server.
+=================================================================================================
+# React JS
+ - library JavaScript yang dikembangkan oleh Facebook untuk mengelola antarmuka pengguna untuk  aplikasi web dengan mudah
+ - React disebut dengan component based karena 
+* Render
+ - untuk mereturn tampilan yang ada di screen
+* Import && Export
+ - (Export) default hanya untuk satu class atau satu function.
+* JSX
+ - Untuk menggabungkan tag html dengan javascript.
+* Property (Prop)
+ - Prop dimiliki oleh komponen
+ - Prop jika function didapat dari parameter kalau class didapat dari this
+ - Prop secara umum digunakan untuk komunikasi data.
+* State
+ - State component yang private.
+ - Hanya component itu sendiri yang bisa access.
+ - Component itu sendiri bisa mengubah state.
+=================================================================================================
+
+# Agile Methodology
+
+
+# API Gateway
+ - Sebagai load balancer
+ - Untuk mempermudah jalur-jalur daripada service yang ada
+
+#Flutter
+ BLoC design guidelines
+ 1. Inputs and outputs are simple Streams/Sinks only
+ 2. Dependencies must be injectable and platform agnostic
+ 3. No platform branching allowd
+ 4. Implementation can be whatever you want if you follow the previous rules.
+ 
+Beberapa hal yang perlu diingat tentang topik:
+
+    - Pengiriman pesan topik sangat cocok untuk konten seperti cuaca, atau informasi lainnya yang tersedia untuk umum.
+    
+    - Pesan topik dioptimalkan untuk throughput, bukan latensi. Untuk pengiriman yang cepat dan aman ke satu perangkat atau sekelompok kecil perangkat, targetkan pesan ke token pendaftaran, bukan topik.
+    
+    - Jika Anda perlu mengirimkan pesan ke beberapa perangkat per pengguna, sebaiknya gunakan pengiriman pesan grup perangkat untuk kasus penggunaan tersebut.
+    
+    - Pengiriman pesan topik mendukung langganan tak terbatas untuk setiap topik. Namun, FCM memberlakukan batasan pada area berikut ini:
+        1. Satu instance aplikasi hanya dapat berlangganan maksimal          2.000 topik.
+        
+        2. Jika Anda menggunakan impor batch untuk berlangganan instance aplikasi, setiap permintaan dibatasi ke 1.000 instance aplikasi
+        .
+        3. Frekuensi langganan baru dibatasi kapasitasnya per project. Jika Anda mengirim terlalu banyak permintaan langganan dalam waktu singkat, server FCM akan merespons dengan 429 RESOURCE_EXHAUSTED respons ("kuota terlampaui"). Coba lagi dengan backoff eksponensial. 
+
